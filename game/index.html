@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emberclash — Duel of the Four Sparks</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #14100c; height: 100%; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #wrap { position: relative; width: min(100vw, 177.78vh); height: min(100vh, 56.25vw); }
+  canvas { width: 100%; height: 100%; display: block; background: #1d2b1f; cursor: default; }
+  #hint {
+    position: absolute; left: 10px; bottom: 8px; color: rgba(255, 244, 214, 0.55);
+    font: 12px/1.4 system-ui, sans-serif; pointer-events: none; user-select: none;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">Click a card to play it &middot; Space ends your turn &middot; 1&ndash;7 play cards &middot; M mutes</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
